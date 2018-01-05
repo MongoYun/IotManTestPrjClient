@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">IotMan物联平台</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="PREFS">IotManMqttPrefs</string>
+    <string name="HOSTNAME">iot.iotman.club</string>
+    <string name="PORT">1883</string>
+    <string name="DEVICEID">-Deviceid</string>
+    <string name="USERNAME">-Username</string>
+    <string name="PASSWORD">-Password</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
