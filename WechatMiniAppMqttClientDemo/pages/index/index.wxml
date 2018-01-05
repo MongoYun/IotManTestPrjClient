@@ -1,0 +1,22 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="userlogin">
+  接收：<text>{{revTopic}}:{{revData}}</text>
+  <input class="useri" type="text" bindinput="pubDataInput" placeholder="请输入要推送的内容"/>
+  <button bindtap="pub">推送</button>
+  </view>
+  <view class="userlogin">
+    <input class="useri" type="text" bindinput="deviceIdInput" placeholder="请输入设备ID"/>
+    <input class="useri" type="text" bindinput="userNameInput" placeholder="请输入用户名"/>
+    <input class="useri" type="text" bindinput="userPasswordInput" password="true" placeholder="请输入密码"/>
+    <input class="useri" type="text" bindinput="subTopicInput" placeholder="请输入订阅主题名"/>
+    <button bindtap="logIn">登录</button>  
+  </view>
+</view>
